@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyKhachHang));
             this.bntThoat = new System.Windows.Forms.Button();
             this.dtKhachhang = new System.Windows.Forms.DataGridView();
             this.txtTimkiem = new System.Windows.Forms.TextBox();
@@ -64,9 +65,14 @@
             // 
             // dtKhachhang
             // 
-            this.dtKhachhang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtKhachhang.AllowUserToAddRows = false;
+            this.dtKhachhang.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.dtKhachhang.BackgroundColor = System.Drawing.Color.White;
+            this.dtKhachhang.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dtKhachhang.Location = new System.Drawing.Point(39, 275);
+            this.dtKhachhang.MultiSelect = false;
             this.dtKhachhang.Name = "dtKhachhang";
+            this.dtKhachhang.ReadOnly = true;
             this.dtKhachhang.Size = new System.Drawing.Size(684, 150);
             this.dtKhachhang.TabIndex = 43;
             this.dtKhachhang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtKhachhang_CellContentClick);
@@ -276,6 +282,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "QuanLyKhachHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuanLyKhachHang";
