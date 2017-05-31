@@ -31,7 +31,7 @@
             this.bntThoat = new System.Windows.Forms.Button();
             this.dtKhachhang = new System.Windows.Forms.DataGridView();
             this.txtTimkiem = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btn_find = new System.Windows.Forms.Button();
             this.bntXoa = new System.Windows.Forms.Button();
             this.bntSua = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -65,10 +65,11 @@
             // dtKhachhang
             // 
             this.dtKhachhang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtKhachhang.Location = new System.Drawing.Point(55, 275);
+            this.dtKhachhang.Location = new System.Drawing.Point(39, 275);
             this.dtKhachhang.Name = "dtKhachhang";
-            this.dtKhachhang.Size = new System.Drawing.Size(653, 150);
+            this.dtKhachhang.Size = new System.Drawing.Size(684, 150);
             this.dtKhachhang.TabIndex = 43;
+            this.dtKhachhang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtKhachhang_CellContentClick);
             this.dtKhachhang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtKhachhang_CellContentClick);
             // 
             // txtTimkiem
@@ -77,16 +78,18 @@
             this.txtTimkiem.Name = "txtTimkiem";
             this.txtTimkiem.Size = new System.Drawing.Size(229, 20);
             this.txtTimkiem.TabIndex = 42;
+            this.txtTimkiem.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTimkiem_KeyDown);
             // 
-            // button5
+            // btn_find
             // 
-            this.button5.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.button5.Location = new System.Drawing.Point(53, 224);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 41;
-            this.button5.Text = "Tìm Kiếm ";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btn_find.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btn_find.Location = new System.Drawing.Point(53, 224);
+            this.btn_find.Name = "btn_find";
+            this.btn_find.Size = new System.Drawing.Size(75, 23);
+            this.btn_find.TabIndex = 41;
+            this.btn_find.Text = "Tìm Kiếm ";
+            this.btn_find.UseVisualStyleBackColor = true;
+            this.btn_find.Click += new System.EventHandler(this.btn_find_Click);
             // 
             // bntXoa
             // 
@@ -251,12 +254,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(771, 444);
+            this.ClientSize = new System.Drawing.Size(766, 444);
             this.Controls.Add(this.cmbGioitinh);
             this.Controls.Add(this.bntThoat);
             this.Controls.Add(this.dtKhachhang);
             this.Controls.Add(this.txtTimkiem);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btn_find);
             this.Controls.Add(this.bntXoa);
             this.Controls.Add(this.bntSua);
             this.Controls.Add(this.label7);
@@ -274,6 +277,7 @@
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.Name = "QuanLyKhachHang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuanLyKhachHang";
             ((System.ComponentModel.ISupportInitialize)(this.dtKhachhang)).EndInit();
             this.ResumeLayout(false);
@@ -286,7 +290,7 @@
         private System.Windows.Forms.Button bntThoat;
         private System.Windows.Forms.DataGridView dtKhachhang;
         private System.Windows.Forms.TextBox txtTimkiem;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btn_find;
         private System.Windows.Forms.Button bntXoa;
         private System.Windows.Forms.Button bntSua;
         private System.Windows.Forms.Label label7;
