@@ -15,3 +15,6 @@ C:\Users\HOAITT\documents\visual studio 2013\Projects\QuanLyKS\QuanLyKS\obj\Debu
 C:\Users\HOAITT\documents\visual studio 2013\Projects\QuanLyKS\QuanLyKS\obj\Debug\QuanLyKS.QuanLyThietBi.resources
 C:\Users\HOAITT\documents\visual studio 2013\Projects\QuanLyKS\QuanLyKS\obj\Debug\QuanLyKS.QuanLyDichVu.resources
 C:\Users\HOAITT\documents\visual studio 2013\Projects\QuanLyKS\QuanLyKS\obj\Debug\QuanLyKS.HoaDonThanhToan.resources
+C:\Users\HOAITT\Documents\GitHub\QuanLyKhachSan\QuanLyKS\QuanLyKS\bin\Debug\QuanLyKS.exe.config
+C:\Users\HOAITT\Documents\GitHub\QuanLyKhachSan\QuanLyKS\QuanLyKS\obj\Debug\QuanLyKS.exe
+C:\Users\HOAITT\Documents\GitHub\QuanLyKhachSan\QuanLyKS\QuanLyKS\obj\Debug\QuanLyKS.pdb

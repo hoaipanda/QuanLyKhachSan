@@ -101,3 +101,11 @@ create table PhieuThuePhong(
 	FOREIGN KEY (MaPhong) references Phong(MaPhong),
 	FOREIGN KEY (MaKH) references KhachHang(MaKH)
 )
+ALTER TABLE Nhanvien DROP COLUMN password 
+ALTER TABLE Nhanvien ADD  Matkhau nvarchar(50)
+ALTER TABLE Dichvu_SD DROP COLUMN MaDV 
+ALTER TABLE Dichvu_SD ADD  MaDV int
+ALTER TABLE Dichvu_SD DROP COLUMN  Soluong
+ALTER TABLE Dichvu_SD ADD  Soluong int
+ALTER TABLE Dichvu_SD DROP COLUMN Tongtien 
+ALTER TABLE Dichvu_SD ADD  Tongtien float
