@@ -16,7 +16,8 @@ namespace QuanLyKS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QuanLyThuePhong());
+            //Application.Run(new QuanLyThuePhong());
+            Application.Run(new QLDangnhap());
         }
     }
 }

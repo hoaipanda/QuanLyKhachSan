@@ -118,7 +118,7 @@
             this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(700, 32);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(716, 32);
             this.flowLayoutPanel1.TabIndex = 76;
             // 
             // label6
@@ -134,7 +134,7 @@
             // 
             // txtTrangthai
             // 
-            this.txtTrangthai.Location = new System.Drawing.Point(528, 87);
+            this.txtTrangthai.Location = new System.Drawing.Point(528, 84);
             this.txtTrangthai.Name = "txtTrangthai";
             this.txtTrangthai.Size = new System.Drawing.Size(149, 20);
             this.txtTrangthai.TabIndex = 74;

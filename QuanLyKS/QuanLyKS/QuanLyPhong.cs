@@ -85,12 +85,7 @@ namespace QuanLyKS
 
         private void dtPhong_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            int chiso = dtPhong.CurrentRow.Index;
-            txtMaphong.Text = dtPhong[0, chiso].Value.ToString();
-            txtSophong.Text = dtPhong[1, chiso].Value.ToString();
-            txtMaLP.Text = dtPhong[2, chiso].Value.ToString();
-            txtTrangthai.Text = dtPhong[3, chiso].Value.ToString();
-            txtMaphong.Enabled = false;
+            
         }
 
         private void bntSua_Click(object sender, EventArgs e)
@@ -134,6 +129,17 @@ namespace QuanLyKS
         {
             if (MessageBox.Show("Bạn có muốn thoát không?", "Thông báo!", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 Close();
+
+        }
+
+        private void dtPhong_SelectionChanged(object sender, EventArgs e)
+        {
+            int chiso = dtPhong.CurrentRow.Index;
+            txtMaphong.Text = dtPhong[0, chiso].Value.ToString();
+            txtSophong.Text = dtPhong[1, chiso].Value.ToString();
+            txtMaLP.Text = dtPhong[2, chiso].Value.ToString();
+            txtTrangthai.Text = dtPhong[3, chiso].Value.ToString();
+            txtMaphong.Enabled = false;
 
         }
 

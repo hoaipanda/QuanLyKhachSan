@@ -22,7 +22,7 @@ namespace QuanLyKS
         public static void OpenConnection()
         {
             string sql = @"Data Source=HOAITT-PC\HAOITT;Initial Catalog=QuanLyKS;Integrated Security=True";
-
+           // sql = @"Data Source=SUPER\SQLEXPRESS ;Initial Catalog=QuanLyKS ;Persist Security Info=True; User ID=detai6 ;Password=detai6 ";
                 conn = new SqlConnection(sql);
                 conn.Open();
         }
@@ -39,6 +39,21 @@ namespace QuanLyKS
         {
             // tạo đối tượng trỏ tới dl trong database 
             cmd = new SqlCommand(sql,conn);
+            // dtg để lưu dữ liệu lên database 
+            da = new SqlDataAdapter();
+            da.SelectCommand = cmd;
+            // tạo database để hiển thị dl
+            DataTable table = new DataTable();
+            da.Fill(table);
+            da.Dispose();
+            cmd.Dispose();
+            return table;
+        }
+        public static DataTable getDataTable(string sql, string khoatk)
+        {
+            // tạo đối tượng trỏ tới dl trong database 
+            cmd = new SqlCommand(sql, conn);
+            if (!string.IsNullOrWhiteSpace(khoatk)) cmd.Parameters.Add("@khoatk", SqlDbType.NVarChar).Value = khoatk;
             // dtg để lưu dữ liệu lên database 
             da = new SqlDataAdapter();
             da.SelectCommand = cmd;

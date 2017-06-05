@@ -224,6 +224,7 @@
             this.dtPhong.Size = new System.Drawing.Size(653, 150);
             this.dtPhong.TabIndex = 64;
             this.dtPhong.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtPhong_CellContentClick);
+            this.dtPhong.SelectionChanged += new System.EventHandler(this.dtPhong_SelectionChanged);
             // 
             // QuanLyPhong
             // 
